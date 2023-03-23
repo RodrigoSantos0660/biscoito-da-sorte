@@ -26,21 +26,21 @@ const frases = [
 'Você sempre será a sua melhor companhia',
 'Realize o óbvio, pense no improvável e conquiste o impossível.',
 ]
+biscoito1.addEventListener('click',addclass)
+botao.addEventListener("click",reload)
 
 function frasebiscoito(){
   let fraseselecionada = Math.floor(Math.random() * 20 + 1)
   return fraseselecionada
 }
-biscoito1.addEventListener('click',function(){
+function addclass(){
   biscoito.classList.toggle("hide")
   biscoito2.classList.toggle("hide")
-})
-
-botao.addEventListener("click",function(){
+}
+  function reload(){
   document.location.reload(true);
-})
-
-  document.getElementById ("troca").innerHTML=(frases[frasebiscoito()])
+}
+document.getElementById ("troca").innerHTML=(frases[frasebiscoito()])
  
 
 
